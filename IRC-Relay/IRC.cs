@@ -84,7 +84,7 @@ namespace IRCRelay
                 {
                     ircClient.SendMessage(SendType.Message, config.IRCAuthUser, config.IRCAuthString);
 
-                    Thread.Sleep(1000); // login delay
+                    Thread.Sleep(10000); // login delay
                 }
 
                 ircClient.RfcJoin(config.IRCChannel);
